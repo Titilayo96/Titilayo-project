@@ -1,38 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #9932cc;
+  color: #fff;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 20px;
+}
+
 .App {
+  width: 70%;
+  height: 100%;
   text-align: center;
+  margin: 8px;
+  padding: 4%;
+  margin-left: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskBg div {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.btn-success {
+  background-color: #663399;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #ba55d3;
+  border: none;
+}
+
+.btn-success:active {
+  background-color: #9370d8;
+  border: none;
+}
+
+.taskBg {
+  background-color: #9370d8;
+  padding: 10px 140px 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  position: relative;
+  font-size: 22px;
+  text-align: left;
+}
+
+.taskNumber {
+  color: #5e059e;
+  border: 2px solid #9d33bd;
+  border-radius: 40%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 28px;
+  height: 26px;
+  font-size: 14px;
+  margin-right: 8px;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.taskBg .taskText {
+ flex: 1; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskBg .done .taskText {
+  opacity: 0.3;
+  text-decoration: line-through ;
 }
+
+.iconsWrap {
+  display: inline-block;
+  width: auto;
+  right: 15px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.taskBg .iconsWrap span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  color:  ghostwhite;
+}
+
+.taskBg .iconsWrap span:hover {
+  color:  #663399;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.btn-warning {
+  color: #000;
+  background-color: #9370d8;;
+  border: none;
+}
+
+.btn-warning:hover {
+background-color: #663399;
+}
+
+
+  
